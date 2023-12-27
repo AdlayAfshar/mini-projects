@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* background-color:cadetblue; */
+    background-color: darkturquoise;
+    /* position: relative; */
+}
+
+.form {
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    background-color:azure;
+    border-radius: 10px;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input::placeholder {
+    color: lightgrey;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: dotted;
+    border-color: darkgray;
+    position: relative;
+    color: darkturquoise;
+    font-size: 25px;
+}
+
+.list li .fa-trash{
+    color: red;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.304);
+}
+
+.list li .fa-trash:hover {
+    color: black;
+}
+
+.list li .fa-square-check{
+    /* color: darkcyan; */
+    color: darkgray;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.304);
+}
+
+.list li .fa-square-check:hover {
+    color: lawngreen;
+}
+
+.list li.checked{
+    color: lightskyblue;
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-square-check{
+    color: lawngreen;
+}
