@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1560762484-813fc97650a0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGNvbXB1dGVyfGVufDB8fDB8fHww');
+    background-size: cover;
+    text-align: center;
+    transition: filter .7s;
+}
+
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    filter: brightness(.8);
+}
+
+.active.main {
+    filter: blur(5px) brightness(.7);
+}
+
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    width: 400px;
+    height: 230px;
+    transform: translateX(-50%);
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background:  url('https://images.unsplash.com/photo-1574192324001-ee41e18ed679?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGNvbXB1dGVyfGVufDB8fDB8fHww');
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: all .4s;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 10px 0px;
+    font-family: sans-serif;
+    color:crimson;
+}
+
+label {
+    color: blueviolet;
+    font-family: sans-serif;
+}
+
+.popup-btn {
+    background-color: orangered;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.input {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.input::placeholder {
+    color: lightgrey;
+}
+
+.close-icon {
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: orangered;
+}
+
+.active.popup {
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
